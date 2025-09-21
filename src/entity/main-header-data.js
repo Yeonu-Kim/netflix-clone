@@ -15,26 +15,4 @@ export const HEADER_DATA = {
     { contents: "내가 찜한 리스트", href: ROUTE.WISH_LIST },
     { contents: "언어별로 찾아보기", href: ROUTE.LANGUAGE_SEARCH },
   ],
-  headerIcons: [
-    {
-      type: "button",
-      className: "header-icon-button",
-      content: `<img src="${ASSET_PATH.SEARCH}" />`,
-    },
-    {
-      type: "button",
-      className: "header-icon-kids",
-      content: "키즈",
-    },
-    {
-      type: "button",
-      className: "header-icon-notification",
-      content: `<img src="${ASSET_PATH.NOTIFICATON}" /><span class="header-icon-notification-badge">10</span>`,
-    },
-    {
-      type: "button",
-      className: "header-icon-kids",
-      content: `<img src="${ASSET_PATH.MY_PROFILE}" /><img src="${ASSET_PATH.ARROW.DOWN}" />`,
-    },
-  ],
 };

@@ -1,18 +1,18 @@
 import { ASSET_PATH } from "../../entity/asset.js";
 import { HEADER_DATA } from "../../entity/main-header-data.js";
 
+const API_VALUE = {
+  NOTIFICATION_NUMBER: "10",
+  PROFILE_IMG: ASSET_PATH.MY_PROFILE,
+  ALT: "김연우의 프로필 사진",
+};
+
 export class MainHeader extends HTMLElement {
   constructor() {
     super();
   }
 
   connectedCallback() {
-    const API_VALUE = {
-      NOTIFICATION_NUMBER: "10",
-      PROFILE_IMG: ASSET_PATH.MY_PROFILE,
-      ALT: "김연우의 프로필 사진",
-    };
-
     this.innerHTML = this._generateHeader(API_VALUE);
   }
 
