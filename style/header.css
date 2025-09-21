@@ -24,7 +24,10 @@
   backdrop-filter: blur(10px);
 }
 
-/* Left Side - Logo and Navigation */
+.header-right-wrapper {
+  position: relative;
+}
+
 .header-left-wrapper {
   display: flex;
   align-items: center;
@@ -193,10 +196,5 @@
 
   .header-container > div:last-child {
     gap: 12px;
-  }
-
-  .logo img {
-    width: 75px;
-    height: 20px;
   }
 }
