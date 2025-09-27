@@ -1,7 +1,7 @@
 .recommendation-container {
   position: relative;
   width: 100%;
-  height: 1200px;
+  padding-bottom: 30px;
 }
 
 .recommendation-contents-wrapper {
@@ -97,8 +97,9 @@
 .recommendation-contents-list-inner {
   display: flex;
   width: calc(100vw - 72px);
+  height: 100%;
+  overflow-x: scroll;
   gap: 8px;
-  overflow-x: auto;
   padding-bottom: 10px;
 }
 
