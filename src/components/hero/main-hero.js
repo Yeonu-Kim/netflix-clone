@@ -16,7 +16,6 @@ export class MainHero extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = this._render(API_VALUE);
-    this._setupEventListeners();
   }
 
   _render(API_VALUE) {
@@ -25,24 +24,14 @@ export class MainHero extends HTMLElement {
         <img src="${API_VALUE.thumbnail_image}" class="hero-image" />
         <div class="hero-overlay-wrapper">
           <img src="${API_VALUE.title_image}" alt="폭군의 셰프" />
-          <div class="hero-contents-inner">
           ${
-            API_VALUE.rank < 10 &&
-            `<div class="hero-top-ten-inner">
-                <span>TOP</span>
-                <span>10</span>
-              </div>
-              <span class="hero-top-ten">오늘 시리즈 순위 ${API_VALUE.rank}위</span>`
+            API_VALUE.rank <= 10 &&
+            `<main-hero-top-ten-info rank=${API_VALUE.rank}></main-hero-top-ten-info>`
           }
-          </div>
           <p class="hero-contents-description">${API_VALUE.description}</p>
           <div class="hero-button-inner">
-            <button class="hero-play-button">
-              <img src="/assets/play.svg" />재생
-            </button>
-            <button class="hero-more-button">
-              <img src="/assets/info.svg" />상세 정보
-            </button>
+            <main-hero-play-button></main-hero-play-button>
+            <main-hero-info-button></main-hero-info-button>
           </div>
         </div>
       </section>

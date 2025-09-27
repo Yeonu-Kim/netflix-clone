@@ -6,6 +6,8 @@ export const ASSET_PATH = {
   ARROW: {
     DOWN: "/assets/down_arrow.svg",
   },
+  PLAY: "/assets/play.svg",
+  INFO: "/assets/info.svg",
   MAIN: {
     THUMBNAIL: "/assets/hero_thumbnail.webp",
     TITLE: "/assets/hero_title.webp",

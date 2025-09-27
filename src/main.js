@@ -6,6 +6,11 @@ import { MainHeaderNotificationButton } from "./components/header/main-header-no
 import { MainHeaderSearchButton } from "./components/header/main-header-search-button.js";
 import { MainHeaderNotificationModal } from "./components/header/main-header-notification-modal.js";
 import { MainHero } from "./components/hero/main-hero.js";
+import { MainHeroPlayButton } from "./components/hero/main-hero-play-button.js";
+import { MainHeroInfoButton } from "./components/hero/main-hero-info-button.js";
+import { MainHeroTopTenInfo } from "./components/hero/main-hero-top-ten-info.js";
+
+import { TopTenBadge } from "./components/common/top-ten-badge.js";
 
 // Header
 customElements.define("main-header", MainHeader);
@@ -27,3 +32,9 @@ customElements.define(
 
 // Hero
 customElements.define("main-hero", MainHero);
+customElements.define("main-hero-play-button", MainHeroPlayButton);
+customElements.define("main-hero-info-button", MainHeroInfoButton);
+customElements.define("main-hero-top-ten-info", MainHeroTopTenInfo);
+
+// Common
+customElements.define("top-ten-badge", TopTenBadge);
