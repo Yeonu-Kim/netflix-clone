@@ -74,7 +74,6 @@ export class MainHeader extends HTMLElement {
     const headerRightWrapper = this.querySelector(".header-right-wrapper");
     headerRightWrapper.addEventListener("notification-click", (e) => {
       const { totalCount } = e.detail;
-      console.log(e.detail);
       this._updateBadgeCount(totalCount);
     });
   }
